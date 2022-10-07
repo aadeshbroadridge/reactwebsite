@@ -1,0 +1,39 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "Aadesh",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt0U1ajLIyKQCzji9VuGzd3UyChCyFw7N0mfCPMIo&s",
+      "company": "Broadridge",
+      "age": 21
+    },
+    {
+      "id": 3,
+      "name": "Sreekar",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Amazon_icon.svg/2500px-Amazon_icon.svg.png",
+      "company": "Amazon",
+      "age": 25
+    },
+    {
+      "name": "varun",
+      "image": "https://www.carlogos.org/logo/Tata-Group-logo-3840x2160.png",
+      "company": "TCS",
+      "age": "32",
+      "id": 4
+    },
+    {
+      "name": "Peethi",
+      "image": "https://freepngimg.com/thumb/microsoft/28386-6-microsoft-logo-transparent-image-thumb.png",
+      "company": "Microsoft",
+      "age": "45",
+      "id": 5
+    },
+    {
+      "name": "Bhavani",
+      "image": "https://www.freepnglogos.com/uploads/dell-png-logo/company-dell-png-logo-1.png",
+      "company": "Dell",
+      "age": "12",
+      "id": 6
+    }
+  ]
+}

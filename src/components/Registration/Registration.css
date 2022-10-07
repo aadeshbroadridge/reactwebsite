@@ -1,0 +1,349 @@
+
+
+:root {
+    --error-color: #dc3545;
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #003859;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    overflow:hidden;
+}
+
+.reg_main  {
+    margin: 60px auto;
+    background-color: white;
+    width: 550px;
+    border-radius: 20px;
+    padding: 10px 10px;
+    overflow: scroll;
+    overflow-y: scroll;
+    height: 470px;
+    overflow-x: visible;
+    
+    
+    
+}
+.reg_main .head{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.reg_main .back{
+   
+    float: left;
+    text-align: center;
+
+    
+}
+.reg_main .logo{
+   
+    float: left;
+    text-align: center;
+    margin-left: 85px; 
+    margin-top: 15px;
+    
+}
+.reg_main .title{
+    padding: 45px 50px 15px 10px;
+    /* display: inline; */
+    float: left;
+    /* padding: 35px 0px 5px 0px;
+    text-align: center; */
+}
+ 
+.reg_form_content {
+    padding: 15px 35px;
+    /* text-align: center; */
+    /* display: flex;
+    flex-direction: column; */
+    
+}
+
+.reg_form_content .input_tag {
+    padding: 15px;
+    display: table-row;
+    margin: 15px;
+} 
+
+.reg_form_content .input_tag label{
+    display: table-cell;
+    text-align: left;
+    /* padding: 5px; */
+    font-size: 16px;
+    padding: 10px 10px;
+
+}
+
+.reg_form_content .input_tag input{
+    display: table-cell;
+    font-size: 16px;
+    width: 90%;
+    padding: 5px 10px;
+    border: 0;
+    outline: none;
+    border-bottom: 1px solid #747474;
+    text-align: left;
+}
+.reg_form_content .input_tag input[type=password]{
+    display: table-cell;
+    font-size: 16px;
+    width: 75%;
+    padding: 5px 20px;
+    border: 0;
+    outline: none;
+    border-bottom: 1px solid #747474;
+    text-align: left;
+}
+/* .reg_form_content .input_tag input[type=password]::placeholder{
+    padding-left: 15px;
+} */
+.reg_form_content .input_tag input b{
+    /* display: table-cell block; */
+    float: left;
+    margin-left: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+.reg_form_content .input_tag  b:hover{
+    cursor: pointer;
+}
+
+/* gender */
+.reg_form_content .gender {
+    padding: 15px;
+    display: table-row;
+    margin: 15px;
+} 
+.reg_form_content .gender label{
+    display: table-cell;
+    text-align: left;
+    /* padding: 5px; */
+    font-size: 16px;
+    padding: 10px 10px;
+
+}
+.reg_form_content .gender .genderinputdiv{
+    display: table-cell block;
+    text-align: left;
+    margin-right: 20px;
+    
+    
+}
+.genderinput{
+    margin-left:5px;
+    margin-right: 5px;
+    /* padding-top: 15px; */
+    font-size: 16px;
+}
+
+/* highestqualification css */
+.reg_form_content .highestqualification {
+    padding: 15px;
+    display: table-row;
+} 
+.reg_form_content .highestqualification label{
+    display: table-cell;
+    text-align: left;
+    /* padding: 5px; */
+    font-size: 16px;
+    padding: 10px 10px;
+
+
+}
+.reg_form_content .highestqualification .hqualinputdiv{
+    display: table-cell block;
+    text-align: left;
+    
+}
+.hqual{
+    margin-left:5px;
+    margin-right: 5px;
+    font-size: 16px;
+    width: 80%;
+    /* padding-top: 15px; */
+}
+
+/* specialization css */
+.reg_form_content .specialization {
+    padding: 15px;
+    display: table-row;
+} 
+.reg_form_content .specialization label{
+    display: table-cell;
+    text-align: left;
+    /* padding: 5px; */
+    font-size: 16px;
+    padding: 10px 10px;
+
+}
+.reg_form_content .specialization .specinputdiv{
+    display: table-cell block;
+    text-align: left;
+    
+}
+.spec{
+    margin-left:5px;
+    margin-right: 5px;
+    font-size: 16px;
+    /* padding-top: 15px; */
+    width: 80%;
+}
+
+
+/* knownlanguages css */
+.reg_form_content .knownlanguages {
+    padding: 15px;
+    display: table-row;
+} 
+.reg_form_content .knownlanguages label{
+    display: table-cell;
+    text-align: left;
+    /* padding: 5px; */
+    font-size: 16px;
+    padding: 10px 10px;
+
+}
+.reg_form_content .knownlanguages .klanginputdiv{
+    display: table-cell block;
+    text-align: left;
+    
+}
+.klang{
+    margin-left:5px;
+    margin-right: 5px;
+    font-size: 16px;
+    /* padding-top: 15px; */
+}
+
+/* plevel css */
+.reg_form_content .proflevel {
+    padding: 15px;
+    display: table-row;
+} 
+.reg_form_content .proflevel label{
+    display: table-cell;
+    text-align: left;
+    /* padding: 5px; */
+    font-size: 16px;
+    padding: 10px 10px;
+
+}
+.reg_form_content .proflevel .plevelinputdiv{
+    display: table-cell;
+    text-align: left;
+}
+
+.plevel{
+    margin-left:5px;
+    margin-right: 5px;
+    margin-top: 7px;
+    width: 80%;
+
+   
+}
+
+.reg_form_content .input_tag .firstname {
+    padding: 10px 1px;
+    background: url("../../usericon.png") no-repeat left;
+    background-size: 20px;
+    padding-left: 30px;
+    
+}
+.reg_form_content .input_tag .lastname {
+    padding: 10px 1px;
+    background: url("../../usericon.png") no-repeat left;
+    background-size: 20px;
+    padding-left: 30px;
+    
+}
+
+.reg_form_content .input_tag .password {
+    padding: 10px 1px;
+    background: url("../../passicon.png") no-repeat left;
+    background-size: 20px;
+    padding-left: 30px;
+}
+.reg_form_content .input_tag .email {
+    padding: 10px 1px;
+    background: url("../../emailicon.png") no-repeat left;
+    background-size: 20px;
+    padding-left: 30px;
+}
+.reg_form_content .input_tag .phone {
+    padding: 10px 1px;
+    background: url("../../phoneicon.png") no-repeat left;
+    background-size: 20px;
+    padding-left: 30px;
+}
+.reg_form_content .input_tag .cell {
+    padding: 10px 1px;
+    background: url("../../phoneicon.png") no-repeat left;
+    background-size: 20px;
+    padding-left: 30px;
+}
+.reg_form_content .input_tag .weburl {
+    padding: 10px 1px;
+    background: url("../../icon.png") no-repeat left;
+    background-size: 20px;
+    padding-left: 30px;
+}
+
+
+.reg_form_content .input_tag::placeholder {
+    text-transform: uppercase;
+}
+
+.reg_form_content .button_tag input {
+    padding-top: 0px;
+    color: white;
+    background-color: #c46352;
+    border-radius: 4px;
+    width: 275px;
+    height: 40px;
+    margin: 20px 20px 0px 71px;
+    text-align: center;
+    /* margin-bottom: 10px; */
+    
+}
+.reg_form_content .button_tag button:hover{
+    background-color:cadetblue;
+}
+
+.reg_form_content .input_tag .myprofile{
+    border-bottom: none;
+}
+
+/* to remove arrow in phn,age */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* validations */
+.input_tag.error input {
+    border-color: var(--error-color);
+}
+
+.input_tag.success input {
+    border-color: var(--success-color);
+}
+
+.input_tag.success input[type=password] {
+    border-color: var(--success-color);
+}
+
+small {
+    color: var(--error-color);
+    padding: 5px;
+}

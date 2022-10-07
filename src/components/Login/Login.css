@@ -1,0 +1,183 @@
+
+
+    :root {
+        --error-color: #dc3545;
+        --success-color: #28a745;
+        --warning-color: #ffc107;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .bodyclasslf {
+        background: #003859;
+        
+    }
+
+    .login_main {
+        margin: 110px auto;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        width: 525px;
+        border-radius: 10px;
+
+    }
+
+    .login_main h2 {
+        padding: 30px 0px 5px 0px;
+        text-align: center;
+        color: black;
+
+    }
+
+    .login_form_content {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .login_form_content .input_tag {
+        padding: 15px;
+        display: table-row;
+        margin: 5px;
+        
+    } 
+
+    .login_form_content .input_tag label{
+        display: table-cell;
+        text-align: left;
+        /* padding: 5px; */
+        font-size: 16px;
+        padding: 10px 1px 10px 45px;
+        margin-left: 15px;
+    }
+
+    .login_form_content .input_tag input{
+        display: table-cell;
+        font-size: 16px;
+        width: 90%;
+        padding: 5px 10px;
+        border: 0;
+        outline: none;
+        border-bottom: 1px solid #747474;
+    }
+    
+    .login_form_content .button_tag a{
+        text-decoration: none;
+        color: white;
+        margin-top: 10px;
+    }
+
+    .login_form_content .button_tag input:hover{
+        background-color:cadetblue; 
+    }
+
+    .login_form_content .input_tag .username {
+        padding: 10px 1px;
+        background: url("../../usericon.png") no-repeat left;
+        background-size: 20px;
+        padding-left: 30px;
+    }
+
+    .login_form_content .input_tag .pass {
+        padding: 10px 1px;
+        background: url("../../passicon.png") no-repeat left;
+        background-size: 20px;
+        padding-left: 30px;
+    }
+
+    .login_form_content .input_tag::placeholder {
+        text-transform: uppercase;
+    }
+
+    .login_form_content .button_tag input {
+        padding: 0px;
+        color: white;
+        background-color: #c46352;
+        border-radius: 4px;
+        width: 375px;   
+        height: 40px;
+        /* margin: 10px; */
+        margin-bottom: 20px;
+        /* margin-top: 20px; */
+    }
+
+    .login_form_content .forgotlink {
+        letter-spacing: 0.2px;
+        color: #747474;
+        margin: 5px;
+        margin-top:10px;
+    }
+    .login_form_content .forgotlink:hover {
+        color: #003859  ;
+    }
+    .twolinks {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        background-color: #8fb1e9;
+    }
+    .twolinks:hover{
+        background-color: khaki;
+    }
+
+     .login_main .twolinks a {
+
+        color: black;
+        background-color: #8fb1e9;
+        border: none;
+        width: 100%;
+        padding: 15px;
+        text-decoration: none;
+    }
+    
+    .login_main .twolinks a button {
+
+        color: black;
+        background-color: #8fb1e9;
+        border: none;
+        width: 100%;
+        text-align: center;
+        /* margin-left: 210px; */
+        
+    }
+    .login_main .twolinks a:hover button {
+
+        color: black;
+        background-color: khaki;
+        border: none;
+        width: 100%;
+        text-align: center;
+        /* margin-left: 210px; */
+        
+    }
+    
+    .login_main .twolinks a:hover {
+    background-color: khaki;
+    text-decoration: none;
+        color: black;
+    }
+    .login_main .twolinks a:hover button:hover {
+        background-color: khaki;
+        }
+    /*
+    .login_main .twolinks button {
+        text-decoration: none;
+        color: black;
+    } */
+
+
+    /* validations */
+    .input_tag.error input {
+        border-color: var(--error-color);
+    }
+
+    .input_tag.success input {
+        border-color: var(--success-color);
+    }
+
+    small {
+        color: var(--error-color);
+    }
+
