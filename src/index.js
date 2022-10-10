@@ -10,7 +10,7 @@ import Registration from './components/Registration/Registration';
 import Dashboard from './components/Dashboard/Dashboard';
 import ResetPassword from './components/ResetPassword/ResetPassword';
 import Home from './components/Home/Home';
-import Companies from './components/Employees/Employees';
+import Employees from './components/Employees/Employees';
 import AccountOwners from './components/AccountOwners/AccountOwners';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -27,7 +27,7 @@ root.render(
         {/* </Route> */}
         <Route path="/dashboard" element={<Dashboard />}>
           <Route path="home" element={<Home />} />
-          <Route path="employees" element={<Companies />} />
+          <Route path="employees" element={<Employees />} />
           <Route path="accountowners" element={<AccountOwners />} />
           <Route path="resetpassword" element={<ResetPassword />} />
         </Route>

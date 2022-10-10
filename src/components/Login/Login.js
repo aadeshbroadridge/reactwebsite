@@ -5,6 +5,7 @@ import ButtonTag from '../../ButtonTag';
 import './Login.css';
 import LoginInput from '../../LoginInput';
 import SubmitButton from '../../SubmitButton';
+import axios from "axios";
 function signupfunction() {
 
 }
@@ -118,9 +119,38 @@ const Login = () => {
         if (isUsernameValid && isPasswordValid) {
             // alert('loginned!');
             // this.context.router.transitionTo('/dashboard');
-            navigate('/dashboard/home');
+            getUser();
+            
         }
     };
+    const api_url = "http://10.67.204.33:8080/frameworkapi/userValidation";
+  async function getUser() {
+    const response = await fetch(api_url, {
+     
+        
+        method: "POST",
+         
+       
+        body: JSON.stringify({
+            username: document.querySelector('#username').value,
+            password: document.querySelector('#pass').value
+        }),
+         
+        // Adding headers to the request
+        headers: {
+            "Content-type": "application/json; charset=UTF-8"
+        }
+    })
+    console.log(response.status);
+    if(response.status ===  200){
+        navigate('/dashboard/home');
+        // window.location.href = 'home.html'
+    }
+    else{
+        alert('please enter valid credentials to login !');
+    }
+
+  }
 
     return (
         <>

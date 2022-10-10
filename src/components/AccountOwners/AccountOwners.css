@@ -1,9 +1,13 @@
+/* body{
+    overflow: none;
+} */
 .bodyclassao {
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    overflow: none;
+    /* overflow: none; */
     background-color: #003859;
 }
+
 
 
 .btcontainerao {
@@ -20,15 +24,17 @@
     border-radius: 4px;
     text-align: center;
     padding-bottom: 20px;
-    overflow: scroll;
-    overflow-y: scroll;
-    height: 550px;
+    /* overflow: scroll */
+    overflow-y: scroll; 
+    height: auto;
     width: auto;
     overflow-x: visible;
+    margin-left: 10rem;
 }
 
 .profile_mainao h2 {
     padding: 15px 5px 5px 2px;
+    color:black;
 }
 
 /* .info {
@@ -39,7 +45,8 @@
     margin:5px 90px 10px 10px;
 }
 .tableao,
-.thao{
+.thao,
+.tdao{
     border: 1px solid black;
     text-align: left;
     border-collapse: collapse;

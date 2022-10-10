@@ -11,7 +11,7 @@
     padding: 0;
 }
 
-body {
+.bodyclassrf {
     background: #003859;
     /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
     overflow:hidden;
@@ -58,6 +58,7 @@ body {
     float: left;
     /* padding: 35px 0px 5px 0px;
     text-align: center; */
+    color: black;
 }
  
 .reg_form_content {

@@ -21,10 +21,10 @@ const Dashboard = () => {
             <div className="containers">
                 <nav>
                     <ul>
-                        <li><Link to="/dashboard/home" className={dashboardClass}>Home</Link></li>
-                        <li><Link to="/dashboard/employees" className={employeeClass}>Employees</Link></li>
-                        <li><Link to="/dashboard/accountowners" className={accountOwnersClass}>Account Owners</Link></li>
-                        <li><Link to="/dashboard/resetpassword" className={resetpasswordClass}>Reset Password</Link></li>
+                        <li><Link to="/dashboard/home" onClick={()=>{window.location.load()}} className={dashboardClass}>Home</Link></li>
+                        <li><Link to="/dashboard/employees" onClick={()=>{window.location.load()}} className={employeeClass}>Employees</Link></li>
+                        <li><Link to="/dashboard/accountowners" onClick={()=>{window.location.load()}} className={accountOwnersClass}>Account Owners</Link></li>
+                        <li><Link to="/dashboard/resetpassword" onClick={()=>{window.location.load()}} className={resetpasswordClass}>Reset Password</Link></li>
                         <li><a href="/" className="logout" onClick={logoutfunction}>Logout</a></li>
                     </ul>
                 </nav>

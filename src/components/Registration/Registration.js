@@ -479,7 +479,8 @@ const Registration = ()=>{
 
     };
     return (
-        <>
+        <>  
+        <div className="bodyclassrf">
             <div className="reg_main">
                 <div className="head">
                     <Link to="/"><ImageTag src={backicon} alt="back button" onClick={backfn} width="40px" height="40px" className="back" /></Link>
@@ -568,6 +569,7 @@ const Registration = ()=>{
                         </div>
                     </div>
                 </form>
+            </div>
             </div>
         </>
     );
