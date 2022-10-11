@@ -4,13 +4,14 @@ import SubmitButton from "../../SubmitButton";
 import InputTag from "../../InputTag";
 import LabelTag from "../../LabelTag";
 import ButtonTag from "../../ButtonTag";
-import { Link } from 'react-router-dom';
+import { Link,  useNavigate } from 'react-router-dom';
 
 function loginfunction() {
 
 }
 
 const ForgotPassword =()=> {
+    const navigate = useNavigate();
     const [form, setForm] = useState({
         email: ""
     });
@@ -90,7 +91,8 @@ const ForgotPassword =()=> {
 
         // submit to the server if the form is valid
         if (isFormValid) {
-            alert("Check your mail for new password!")
+            alert("Check your mail for new password!");
+            navigate('/')
         }
     };
     return (

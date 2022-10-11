@@ -7,9 +7,10 @@ import LoginInput from "../../LoginInput";
 import LabelTag from "../../LabelTag";
 // import InputTag from "../../InputTag";
 import SubmitButton from "../../SubmitButton";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
  
 const Registration = ()=>{
+    const navigate = useNavigate();
     function backfn() {
         // alert('back button pressed !');
     }  
@@ -411,6 +412,10 @@ const Registration = ()=>{
     if (isFormValid) {
         
         // registerconfirm();
+        if(window.confirm("Do you Really want to register?")){
+            navigate('/');
+        }
+        
         
     }
     };

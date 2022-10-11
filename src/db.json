@@ -5,7 +5,14 @@
       "name": "Aadesh",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt0U1ajLIyKQCzji9VuGzd3UyChCyFw7N0mfCPMIo&s",
       "company": "Broadridge",
-      "age": 21
+      "age": "21"
+    },
+    {
+      "id": 2,
+      "name": "Ravi",
+      "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFwAAABcCAMAAADUMSJqAAABFFBMVEX////qQzU0qFNChfT7vAU8gvR5pPdjl/b7ugD7twDqPzDqPS7/vQDpOyvqQTLpLxvsWE3pNCP2uLT8wAA6qlgEnzv+9PPoJAjtXVP86OfrSz7+5bMvfPP8z3L8zGj+8dj+6L0aokN7wYvb7d9Dg/rB4cj619X1rKjxioTubGTvfnfzm5b4x8Tuc2v74d/sU0f3uZHoKyn/+/P3pBP93qDtWy/pOTfxdyf1mBz4rRH8xETvaCzyggWNsfnU4Pysxfr92pD80n/8wSxxqjqa0KvC1Pv8yVXrvCFUj/bm7v67tC6y2buSrzxWqk3TtyOnsTKevPpXtG5WrYw+jNkzqz45lbI0nYo/ieM6j8g4mpxpunyMyJmqHHfKAAAC+klEQVRoge2Va1faMByHQ6wKvRBKiwVl07YgV3Fjzm1uTmVs6tjFOnbD7/891lqwKb0kDX2xnfV5xTnNec6PX/JPAMjIyMjI+I/Y2m+1O9uypqFctdvr11JUlw9ySJaEYs6myAsSkku9QSrmQVuTXS8GL2ml/srqWhdJuVB4dLiivqdFqF19Z4XyB9tytNpBQGVWdwvx8W4b1GVztzWi2kausri7hErmaCzFULqZSu+hgMcZH0ngfUeeKXc50LdkD/5Bu93tHCL5YZ+ZcteWcheR3NvfWnwsVzWBPTeoCj63nFuyDDqINTco+4IXtV5wSV9mHKAtn5uX9sMW1bbZhvPJU9xdTPPyBkPlGdaJkKobHBWUwvPjxWEL7YSdUZ7jlBeuHbXSde8WOBvlpWPnS+m6wVGeu7e/Kh7n0OpPmZ8TV84pyutjpus0hiH3gPKG+Z2JwK3cJT9c/nq6Ec1bsnzHk+dPAl831yOpn5Hl53lPfh4iX4ti/ZQsv/DkhZ1E8g2y/BEm300k3yTLH/+d8iuyHK9lL+3k2Ibmj9KW40fxIm35HjZEo0RyinOOj38hMP7LE4rLKSZ0OFqoRe7dmLT61NPX35Pl4MO8dPESQpW0+MpLXr+mkO+4cvEjhFCfxK+9rmNyCjcYOqWL4ifooMevxVqhuVrA/VMkXn6GLgZ1cJrKncMofoELYovBDyZV5Tajr9Cj0oxcd4MFp2wFgImOyaEeZT/D3LSt2KjQZw8/7XhuG1o3MCt+u2UGl9yurTMFB8DwFWPrDb/eNHQdfmskurQ8/MU4+2qNTfemMc2xev/Ppt8f7LRHZR6tsmyHdlbVslRV1xd/a/qj4VZTv0niBqCpB+xBdPVnI3EpDpNg9jD9rwbV4xmw02SH09+NtUSFz2lSZZ/esrjtXVXJ4XUr8FrRYpDCV4hvVQxNGBc+bHQTMYnsRlcJ7xRVeqsS9OsVK/ouToQ5tqA3mPYvdTZh3scQhmZzfGfMZjPjbtxcsemMjIyMjH+MP5L1Tdg+gJqIAAAAAElFTkSuQmCC",
+      "company": "Google",
+      "age": 23
     },
     {
       "id": 3,
@@ -22,18 +29,25 @@
       "id": 4
     },
     {
-      "name": "Bhavani",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Amazon_icon.svg/2500px-Amazon_icon.svg.png",
-      "company": "Amazon",
-      "age": "15",
+      "name": "Peethi",
+      "image": "https://freepngimg.com/thumb/microsoft/28386-6-microsoft-logo-transparent-image-thumb.png",
+      "company": "Microsoft",
+      "age": "45",
       "id": 5
     },
     {
-      "name": "Vinay",
-      "image": "https://www.freeiconspng.com/thumbs/walmart-logo-png/walmart-logo-png-12.png",
-      "company": "Walmart",
-      "age": "23",
+      "name": "Bhavani",
+      "image": "https://www.freepnglogos.com/uploads/dell-png-logo/company-dell-png-logo-1.png",
+      "company": "Dell",
+      "age": "12",
       "id": 6
+    },
+    {
+      "name": "Nagesh",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUcJULxziKRtUfzTvuIUGiRY61v-y-SSh4L3Z-9I0&s",
+      "company": "Qualcomm",
+      "age": "24",
+      "id": 7
     }
   ]
 }

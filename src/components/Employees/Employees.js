@@ -39,7 +39,8 @@ const Companies = () => {
     }))
     // console.log('after form:' + JSON.stringify(form));
   };
-    const canceleditfunc = ()=>{
+    const canceleditfunc = (event)=>{
+      event.preventDefault();
       document.querySelector('.editcontainer').style.display = 'none';
     }
     function cancelnewfunction() {
@@ -233,10 +234,11 @@ editsavebtn.addEventListener('click', (e) => {
               <input type="text" name="age" value={addform.age}  onChange={onUpdateAddFields} placeholder="Enter person's age : " className="input-text" required />
               <br />
               <input type="submit"  name="submit" id="addnewbtn" value="Add New Person" className="btn btn-success"  />
+              <button className="btn btn-warning" onClick={cancelnewfunction}>Cancel</button>
             </form>
-            <button className="btn btn-warning" onClick={cancelnewfunction}>Cancel</button>
+            
           </div>
-          <p  className="wannaaddpclass">wanna add persons ?<button id='new-company-btn' className="new-company-btn btn btn-secondary">Add a new person</button></p>
+          <p  className="wannaaddpclass">Want to add persons ?<button id='new-company-btn' className="new-company-btn btn btn-secondary">Add a new person</button></p>
 
           <div className="editcontainer" id="#editcontainer">
             <form className="add-company-form">
@@ -249,8 +251,8 @@ editsavebtn.addEventListener('click', (e) => {
               <br />
               <input type="text" id="editage" name="editage" value={editform.editage}  onChange={onUpdateEditFields} placeholder="Enter person's age : " className="input-text" />
               <br />
-              <input type="submit" id="editsavebutton" name="submit" value="Edit" className="btn btn-success" />
-
+              <input type="submit" id="editsavebutton" name="submit" value="Save" className="btn btn-success" />
+              {/* <br/> */}
               <button className="btn btn-warning" onClick={canceleditfunc}>Cancel</button>
             </form>
           </div>

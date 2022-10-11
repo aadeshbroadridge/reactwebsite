@@ -123,33 +123,44 @@ const Login = () => {
             
         }
     };
-    const api_url = "http://10.67.204.33:8080/frameworkapi/userValidation";
+    // const api_url = "http://10.67.204.33:8080/frameworkapi/userValidation";
+   
+    var data = JSON.stringify({
+        username: form.username,
+        password: form.password
+    });
+    
+    var config = {
+      method: 'post',
+      url: 'http://10.67.204.33:8080/frameworkapi/userValidation',
+      headers: { 
+        'Content-Type': 'application/json'
+      },
+      data : data
+    };
   async function getUser() {
-    const response = await fetch(api_url, {
-     
-        
-        method: "POST",
-         
-       
-        body: JSON.stringify({
-            username: document.querySelector('#username').value,
-            password: document.querySelector('#pass').value
-        }),
-         
-        // Adding headers to the request
-        headers: {
-            "Content-type": "application/json; charset=UTF-8"
-        }
-    })
-    console.log(response.status);
-    if(response.status ===  200){
+    
+    
+   
+
+axios(config)
+.then(function (response) {
+  console.log(JSON.stringify(response.status));
+  if(response.status ===  200){
         navigate('/dashboard/home');
         // window.location.href = 'home.html'
+    }
+    else if(response.status === 401){
+        alert('please enter valid credentials to login !');
     }
     else{
         alert('please enter valid credentials to login !');
     }
-
+})
+.catch(function (error) {
+  console.log(error);
+  alert('login failed, please enter valid credentials')
+});
   }
 
     return (

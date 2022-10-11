@@ -37,15 +37,15 @@ const AccountOwners = () => {
                                 data.forEach((itemData) => {
                                     temp += `
                                     <tr>
-                                    <td style="border:1px solid;text-align:center">${itemData.AccountCount}</td>
-                                    <td style="border:1px solid;text-align:center">${itemData.AccountOwner}</td>
-                                    <td style="border:1px solid;text-align:center">${itemData.EncryptedAccountOwner}</td>
-                                    <td style="border:1px solid;text-align:center">${itemData.ID}</td>
-                                    <td style="border:1px solid;text-align:center">${itemData.TIN}</td>
-                                    <td style="border:1px solid;text-align:center">${itemData.TINTypeID}</td>
-                                    <td style="border:1px solid;text-align:center">${itemData.TotalMarketValue}</td>
-                                    <td style="border:1px solid;text-align:center">${itemData.UpdateDate}</td>
-                                    <td style="border:1px solid;text-align:center">${itemData.WorksheetRecordLimit}</td></tr>`
+                                    <td style="border:1px solid;text-align:center;word-wrap:break-word;overflow:hidden;white-space: nowrap; padding:10px">${itemData.AccountCount}</td>
+                                    <td style="border:1px solid;text-align:center;word-wrap:break-word;overflow:hidden;white-space: nowrap; padding:10px">${itemData.AccountOwner}</td>
+                                    <td style="border:1px solid;text-align:center;word-wrap:break-word;overflow:hidden;white-space: nowrap; padding:10px">${itemData.EncryptedAccountOwner}</td>
+                                    <td style="border:1px solid;text-align:center;word-wrap:break-word;overflow:hidden;white-space: nowrap; padding:10px">${itemData.ID}</td>
+                                    <td style="border:1px solid;text-align:center;word-wrap:break-word;overflow:hidden;white-space: nowrap; padding:10px">${itemData.TIN}</td>
+                                    <td style="border:1px solid;text-align:center;word-wrap:break-word;overflow:hidden;white-space: nowrap; padding:10px">${itemData.TINTypeID}</td>
+                                    <td style="border:1px solid;text-align:center;word-wrap:break-word;overflow:hidden;white-space: nowrap; padding:10px">${itemData.TotalMarketValue}</td>
+                                    <td style="border:1px solid;text-align:center;word-wrap:break-word;overflow:hidden;white-space: nowrap; padding:10px">${itemData.UpdateDate}</td>
+                                    <td style="border:1px solid;text-align:center;word-wrap:break-word;overflow:hidden;white-space: nowrap; padding:10px">${itemData.WorksheetRecordLimit}</td></tr>`
                                 }); 
                                 document.getElementById('dataao').innerHTML = temp;
                                 // console.log(temp)
